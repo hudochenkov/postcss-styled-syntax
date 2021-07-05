@@ -1,0 +1,12 @@
+{
+	"extends": [
+		"eslint-config-hudochenkov",
+		"eslint-config-prettier"
+	],
+	"env": {
+		"browser": false,
+		"node": true,
+		"es6": true,
+		"jest": true
+	}
+}

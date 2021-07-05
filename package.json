@@ -1,0 +1,53 @@
+{
+	"name": "postcss-styled-syntax",
+	"version": "0.1.0",
+	"description": "PostCSS syntax for template literals CSS-in-JS (e. g. styled components).",
+	"main": "index.js",
+	"scripts": {
+		"pretest": "eslint . --max-warnings=0 && prettier '**/*.js' --check",
+		"test": "jest --passWithNoTests",
+		"watch": "jest --watch",
+		"coverage": "jest --coverage",
+		"fix": "eslint . --fix --max-warnings=0 && prettier '**/*.js' --write",
+		"prepare": "husky install"
+	},
+	"repository": "hudochenkov/postcss-styled-syntax",
+	"keywords": [
+		"postcss",
+		"postcss-syntax",
+		"parser",
+		"css-in-js",
+		"styled-components"
+	],
+	"author": "Aleks Hudochenkov <aleks@hudochenkov.com>",
+	"license": "MIT",
+	"lint-staged": {
+		"*.js": [
+			"eslint --fix --max-warnings=0",
+			"prettier --write"
+		]
+	},
+	"jest": {
+		"watchPlugins": [
+			"jest-watch-typeahead/filename",
+			"jest-watch-typeahead/testname"
+		]
+	},
+	"prettier": "prettier-config-hudochenkov",
+	"peerDependencies": {
+		"postcss": "^8.3.5"
+	},
+	"devDependencies": {
+		"eslint": "^7.30.0",
+		"eslint-config-hudochenkov": "^8.0.0",
+		"eslint-config-prettier": "^8.3.0",
+		"husky": "^7.0.0",
+		"jest": "^27.0.6",
+		"jest-watch-typeahead": "^0.6.4",
+		"lint-staged": "^11.0.0",
+		"postcss": "^8.3.5",
+		"prettier": "^2.3.2",
+		"prettier-config-hudochenkov": "^0.2.0",
+		"typescript": "^4.3.5"
+	}
+}
