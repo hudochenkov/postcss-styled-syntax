@@ -8,5 +8,9 @@
 		"node": true,
 		"es6": true,
 		"jest": true
+	},
+	"rules": {
+		"unicorn/prefer-at": 0,
+		"no-template-curly-in-string": 0
 	}
 }

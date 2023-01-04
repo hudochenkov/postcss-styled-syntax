@@ -1,12 +1,16 @@
 {
 	"name": "postcss-styled-syntax",
 	"version": "0.1.0",
-	"description": "PostCSS syntax for template literals CSS-in-JS (e. g. styled components).",
+	"description": "PostCSS syntax for template literals CSS-in-JS (e. g. styled-components).",
 	"main": "lib/index.js",
+	"files": [
+		"lib",
+		"!lib/__tests__"
+	],
 	"scripts": {
 		"types": "tsc",
-		"pretest": "eslint . --max-warnings=0 && prettier '**/*.js' --check && npm run types",
-		"test": "jest --passWithNoTests",
+		"lint": "eslint . --max-warnings 0 && prettier '**/*.js' --check && npm run types",
+		"test": "jest",
 		"watch": "jest --watch",
 		"coverage": "jest --coverage",
 		"fix": "eslint . --fix --max-warnings=0 && prettier '**/*.js' --write",
@@ -24,7 +28,7 @@
 	"license": "MIT",
 	"lint-staged": {
 		"*.js": [
-			"eslint --fix --max-warnings=0",
+			"eslint --fix --max-warnings 0",
 			"prettier --write"
 		]
 	},
@@ -36,22 +40,25 @@
 	},
 	"prettier": "prettier-config-hudochenkov",
 	"dependencies": {
-		"@typescript-eslint/typescript-estree": "^4.28.2"
+		"@typescript-eslint/typescript-estree": "^5.47.0",
+		"estree-walker": "^2.0.2"
 	},
 	"peerDependencies": {
-		"postcss": "^8.3.5"
+		"postcss": "^8.4.20"
 	},
 	"devDependencies": {
-		"eslint": "^7.30.0",
-		"eslint-config-hudochenkov": "^8.0.0",
-		"eslint-config-prettier": "^8.3.0",
-		"husky": "^7.0.0",
-		"jest": "^27.0.6",
-		"jest-watch-typeahead": "^0.6.4",
-		"lint-staged": "^11.0.0",
-		"postcss": "^8.3.5",
-		"prettier": "^2.3.2",
-		"prettier-config-hudochenkov": "^0.2.0",
-		"typescript": "^4.3.5"
+		"@types/estree": "^1.0.0",
+		"@types/jest": "^29.2.5",
+		"eslint": "^8.31.0",
+		"eslint-config-hudochenkov": "^9.0.0",
+		"eslint-config-prettier": "^8.6.0",
+		"husky": "^8.0.3",
+		"jest": "^29.3.1",
+		"jest-watch-typeahead": "^2.2.1",
+		"lint-staged": "^13.1.0",
+		"postcss": "^8.4.20",
+		"prettier": "^2.8.1",
+		"prettier-config-hudochenkov": "^0.3.0",
+		"typescript": "^4.9.4"
 	}
 }
