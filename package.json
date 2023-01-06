@@ -1,6 +1,6 @@
 {
 	"name": "postcss-styled-syntax",
-	"version": "0.1.0",
+	"version": "0.2.0",
 	"description": "PostCSS syntax for template literals CSS-in-JS (e. g. styled-components).",
 	"main": "lib/index.js",
 	"files": [
