@@ -179,14 +179,6 @@ Most of them soon to be addressed.
 
 	It parse as a rule with selector `${textStyles}\n\n\t@media (sadf)`
 
-- Interpolation without semicolon before comment throws an error:
-
-	```js
-	let Component = styled.div`
-		${vcbcvb} /* asdfasff */
-	`;
-	```
-
 ## Acknowledgements
 
 [PostCSS] for tokenizer, parser, stringifier and tests for them.
