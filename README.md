@@ -187,14 +187,6 @@ Most of them soon to be addressed.
 	`;
 	```
 
-- No space between interpolations throws an error:
-	```js
-	let Component = styled.div`
-		${aaa}${bbb}
-		color: green;
-	`;
-	```
-
 ## Acknowledgements
 
 [PostCSS] for tokenizer, parser, stringifier and tests for them.
