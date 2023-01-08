@@ -147,9 +147,7 @@ When stringifyer reaches `raws.before` of a node it checks if it has interpolati
 
 ## Known issues
 
-Most of them soon to be addressed.
-
-- Double slash comments (`//`) will result in parsing error. Use standard CSS comments instead (`/* */`).
+- Double slash comments (`//`) will result in parsing error. Use standard CSS comments instead (`/* */`). It is definitelly possible to add support for double slash comment, but let's use standard CSS as much as possible
 
 - Source maps won't work or could not be trusted. I did not disable them on purpose. But did not test them at all. Because of the way we need handle `css` helpers within styled component, `source.end` positions on a node might change if `css` AST changes. See “How it works” section on stringifying for more info.
 
