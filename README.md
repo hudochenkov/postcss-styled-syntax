@@ -153,20 +153,6 @@ Most of them soon to be addressed.
 
 - Source maps won't work or could not be trusted. I did not disable them on purpose. But did not test them at all. Because of the way we need handle `css` helpers within styled component, `source.end` positions on a node might change if `css` AST changes. See “How it works” section on stringifying for more info.
 
-- Interpolation before rule added to its selector. E. g.:
-
-	```js
-	let Component = styled.p`
-		${textStyles}
-
-		a {
-			color: red;
-		}
-	`;
-	```
-
-	Will create a `Rule` node with `${textStyles}\n\n\ta` selector.
-
 ## Acknowledgements
 
 [PostCSS] for tokenizer, parser, stringifier and tests for them.
