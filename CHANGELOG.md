@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## 0.3.0
+* Interpolation on a separate line before `Rule` now added to `rule.raws.before` instead of being part of a selector
+* Fixed at-rule with interpolation before it parsed as a rule
+* Fixed parsing error for interpolations before a comment
+* Fixed parsing error for multiple interpolations before declaration, while they have no spacing between them
+
 ## 0.2.0
 * Add Node.js 14 support.
 
