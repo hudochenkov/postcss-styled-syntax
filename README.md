@@ -167,18 +167,6 @@ Most of them soon to be addressed.
 
 	Will create a `Rule` node with `${textStyles}\n\n\ta` selector.
 
-- If interpolation before at-rule has no semicolon, then at-rule parsed as a rule. E. g.
-
-	```js
-	let Component = styled.div`
-		${textStyles}
-
-		@media (sadf) {}
-	`;
-	```
-
-	It parse as a rule with selector `${textStyles}\n\n\t@media (sadf)`
-
 ## Acknowledgements
 
 [PostCSS] for tokenizer, parser, stringifier and tests for them.
