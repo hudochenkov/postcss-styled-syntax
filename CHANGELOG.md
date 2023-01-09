@@ -3,6 +3,9 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## 0.3.1
+* Fixed regression for comments inside a selector
+
 ## 0.3.0
 * Interpolation on a separate line before `Rule` now added to `rule.raws.before` instead of being part of a selector
 * Fixed at-rule with interpolation before it parsed as a rule
