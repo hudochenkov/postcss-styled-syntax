@@ -3,6 +3,9 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## 0.4.0
+* Added `raws.isRuleLike` to all Roots. Enable PostCSS and Stylelint to adjust to CSS-in-JS quirks. E. g. if something processes only rules, it could also process `root` if this flag is present
+
 ## 0.3.3
 * Fix: Catch JavaScript parsing errors
 
