@@ -9,6 +9,7 @@
 		"module": "commonjs",
 		"noEmit": true,
 		"allowJs": true,
+		"skipLibCheck": true,
 		"checkJs": true
 	},
 	"exclude": ["./**/node_modules/**/*"],
