@@ -57,5 +57,8 @@
 		"postcss": "^8.4.29",
 		"prettier": "^3.0.3",
 		"prettier-config-hudochenkov": "^0.4.0"
+	},
+	"engines": {
+		"node": ">=14.17"
 	}
 }
