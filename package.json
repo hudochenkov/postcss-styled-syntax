@@ -40,7 +40,8 @@
 	"prettier": "prettier-config-hudochenkov",
 	"dependencies": {
 		"@typescript-eslint/typescript-estree": "^5.62.0",
-		"estree-walker": "^2.0.2"
+		"estree-walker": "^2.0.2",
+		"typescript": "~5.1.6"
 	},
 	"peerDependencies": {
 		"postcss": "^8.4.21"
@@ -55,7 +56,6 @@
 		"jest-watch-typeahead": "^2.2.2",
 		"postcss": "^8.4.29",
 		"prettier": "^3.0.3",
-		"prettier-config-hudochenkov": "^0.4.0",
-		"typescript": "^4.9.4"
+		"prettier-config-hudochenkov": "^0.4.0"
 	}
 }
