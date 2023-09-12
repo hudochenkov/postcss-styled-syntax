@@ -3,6 +3,9 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## 0.5.0
+* Moved `typescript` from `peerDependencies` to `dependencies`. This should also remove “unsupported TypeScript version” messages. Your project doesn't need to be a TypeScript project. `typescript` package is used as a parser for JavaScript and TypeScript files.
+
 ## 0.4.0
 * Added `raws.isRuleLike` to all Roots. Enable PostCSS and Stylelint to adjust to CSS-in-JS quirks. E. g. if something processes only rules, it could also process `root` if this flag is present
 
