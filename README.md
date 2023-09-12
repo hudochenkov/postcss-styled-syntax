@@ -1,12 +1,12 @@
 # postcss-styled-syntax
 
-PostCSS syntax for template literals CSS-in-JS (e. g. styled-components, Emotion). Built to be used as [Stylelint] custom syntax or with [PostCSS] plugins.
+PostCSS syntax for template literals CSS-in-JS (e. g. styled-components, Emotion). It was built to be used as [Stylelint] custom syntax or with [PostCSS] plugins.
 
 Syntax supports:
 
 - Full spectrum of styled-components syntax
 - Deeply nested interpolations
-- Interpolations in selectors, property names and values
+- Interpolations in selectors, property names, and values
 - JavaScript and TypeScript (including files with JSX)
 - All functions:
 	- `styled.foo`
@@ -53,15 +53,15 @@ module.exports = {
 };
 ```
 
-Example assumes using [PostCSS CLI](https://github.com/postcss/postcss-cli) or other PostCSS runner with config support.
+An example assumes using [PostCSS CLI](https://github.com/postcss/postcss-cli) or another PostCSS runner with config support.
 
 ## How it works
 
 ### Parsing
 
-Syntax parser JavaScript/TypeScript code and find all supported components and functions (e. g. <code>css\`\`</code>). Then it go over them and builds a PostCSS AST, where all found components become `Root` nodes inside `Document` node.
+Syntax parser JavaScript/TypeScript code and find all supported components and functions (e.g., <code>css\`\`</code>). Then, it goes over them and builds a PostCSS AST, where all found components become `Root` nodes inside the `Document` node.
 
-All interpolations within found component CSS are end up in the AST. E. g. for a declaration `color: ${brand}` `Decl` node will look like:
+All interpolations within the found component CSS end up in the AST. E. g. for a declaration `color: ${brand}` `Decl` node will look like this:
 
 ```js
 Decl {
@@ -70,7 +70,7 @@ Decl {
 }
 ```
 
-When interpolation is not part of any node it goes to the next node's `raws.before`. For example for the following code:
+When interpolation is not part of any node, it goes to the next node's `raws.before`. For example, for the following code:
 
 ```js
 let Component = styled.p`
@@ -93,7 +93,7 @@ Decl {
 }
 ```
 
-If there is not next node after interpolation, it will go to parents `raws.after`. For example for the following code:
+If there is no next node after interpolation, it will go to parents `raws.after`. For example, for the following code:
 
 ```js
 let Component = styled.p`
@@ -122,7 +122,7 @@ Root {
 
 ### Stringifying
 
-Mostly it works just as default PostCSS stringifyer. The main difference is `css` helper in interpolations within a styled component code. E. g. situatians like this:
+Mostly, it works just as the default PostCSS stringifyer. The main difference is the `css` helper in interpolations within a styled component code. E. g. situations like this:
 
 ```js
 let Component = styled.p`
@@ -141,19 +141,19 @@ let Component = styled.p`
 
 `css` helper inside an interpolation within `Component` code.
 
-During parsing whole interpolation (`${(props) ... }`) is added as `raws.before` to `color: red` node. And it should not be modified. Each `css` helpers remember their original content (as a string).
+During parsing, the whole interpolation (`${(props) ... }`) is added as `raws.before` to `color: red` node. And it should not be modified. Each `css` helper remembers their original content (as a string).
 
-When stringifyer reaches `raws.before` of a node it checks if it has interpolations with `css` helpers. If yes, then it searchs for `css` helper original content and replace it with stringified `css` helper. This way changes made to the AST of `css` helper will be stringified.
+When stringifyer reaches a node's `raws.before`, it checks if it has interpolations with `css` helpers. If yes, it searches for the original content of `css` helper and replaces it with a stringified `css` helper. This way, changes to the AST of the `css` helper will be stringified.
 
 ## Known issues
 
-- Double slash comments (`//`) will result in parsing error. Use standard CSS comments instead (`/* */`). It is definitelly possible to add support for double slash comment, but let's use standard CSS as much as possible
+- Double-slash comments (`//`) will result in a parsing error. Use standard CSS comments instead (`/* */`). It is definitely possible to add support for double-slash comments, but let's use standard CSS as much as possible
 
-- Source maps won't work or could not be trusted. I did not disable them on purpose. But did not test them at all. Because of the way we need handle `css` helpers within styled component, `source.end` positions on a node might change if `css` AST changes. See “How it works” section on stringifying for more info.
+- Source maps won't work or cannot be trusted. I did not disable them on purpose. But did not test them at all. Because of the way we need to handle `css` helpers within a styled component, `source.end` positions on a node might change if `css` AST changes. See the “How it works” section on stringifying for more info.
 
 ## Acknowledgements
 
-[PostCSS] for tokenizer, parser, stringifier and tests for them.
+[PostCSS] for tokenizer, parser, stringifier, and tests for them.
 
 [Prettier](https://prettier.io/) for styled-components detection function in an ESTree AST.
 
