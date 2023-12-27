@@ -32,6 +32,7 @@
 		]
 	},
 	"jest": {
+		"prettierPath": null,
 		"watchPlugins": [
 			"jest-watch-typeahead/filename",
 			"jest-watch-typeahead/testname"
@@ -39,15 +40,12 @@
 	},
 	"prettier": "prettier-config-hudochenkov",
 	"dependencies": {
-		"@typescript-eslint/typescript-estree": "^5.62.0",
-		"estree-walker": "^2.0.2",
 		"typescript": "~5.1.6"
 	},
 	"peerDependencies": {
 		"postcss": "^8.4.21"
 	},
 	"devDependencies": {
-		"@types/estree": "^1.0.1",
 		"@types/jest": "^29.5.4",
 		"eslint": "^8.49.0",
 		"eslint-config-hudochenkov": "^9.0.0",

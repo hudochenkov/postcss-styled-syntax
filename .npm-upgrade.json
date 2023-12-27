@@ -1,8 +1,0 @@
-{
-	"ignore": {
-		"estree-walker": {
-			"versions": "^3.0.0",
-			"reason": "New version is ESM module, not a CommonJS"
-		}
-	}
-}

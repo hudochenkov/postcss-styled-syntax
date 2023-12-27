@@ -1,0 +1,1869 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`component after a component with interpolation 1`] = `
+[
+  {
+    "css": "
+\${css\`position: sticky;\`}
+",
+    "interpolationRanges": [
+      {
+        "end": 55,
+        "start": 30,
+      },
+    ],
+    "locationStart": {
+      "column": 30,
+      "line": 1,
+    },
+    "rangeEnd": 56,
+    "rangeStart": 29,
+  },
+  {
+    "css": "position: sticky;",
+    "interpolationRanges": [],
+    "locationStart": {
+      "column": 7,
+      "line": 2,
+    },
+    "rangeEnd": 53,
+    "rangeStart": 36,
+  },
+  {
+    "css": "",
+    "interpolationRanges": [],
+    "locationStart": {
+      "column": 28,
+      "line": 4,
+    },
+    "rangeEnd": 86,
+    "rangeStart": 86,
+  },
+]
+`;
+
+exports[`component notations createGlobalStyle 1`] = `
+[
+  {
+    "css": "color: red;",
+    "interpolationRanges": [],
+    "locationStart": {
+      "column": 35,
+      "line": 1,
+    },
+    "rangeEnd": 45,
+    "rangeStart": 34,
+  },
+]
+`;
+
+exports[`component notations css 1`] = `
+[
+  {
+    "css": "color: red;",
+    "interpolationRanges": [],
+    "locationStart": {
+      "column": 21,
+      "line": 1,
+    },
+    "rangeEnd": 31,
+    "rangeStart": 20,
+  },
+]
+`;
+
+exports[`component notations styled(Component) 1`] = `
+[
+  {
+    "css": "color: red;",
+    "interpolationRanges": [],
+    "locationStart": {
+      "column": 35,
+      "line": 1,
+    },
+    "rangeEnd": 45,
+    "rangeStart": 34,
+  },
+]
+`;
+
+exports[`component notations styled(Component).attrs({}) 1`] = `
+[
+  {
+    "css": "color: red;",
+    "interpolationRanges": [],
+    "locationStart": {
+      "column": 45,
+      "line": 1,
+    },
+    "rangeEnd": 55,
+    "rangeStart": 44,
+  },
+]
+`;
+
+exports[`component notations styled.foo 1`] = `
+[
+  {
+    "css": "color: red;",
+    "interpolationRanges": [],
+    "locationStart": {
+      "column": 28,
+      "line": 1,
+    },
+    "rangeEnd": 38,
+    "rangeStart": 27,
+  },
+]
+`;
+
+exports[`component notations styled.foo.attrs({}) 1`] = `
+[
+  {
+    "css": "color: red;",
+    "interpolationRanges": [],
+    "locationStart": {
+      "column": 38,
+      "line": 1,
+    },
+    "rangeEnd": 48,
+    "rangeStart": 37,
+  },
+]
+`;
+
+exports[`does not crash for invalid JavaScript syntax 1`] = `[]`;
+
+exports[`interpolations with css helper (many levels deep) three levels deep at the end 1`] = `
+[
+  {
+    "css": "\${css\`color: red;\${css\`color: blue;\${css\`color: green;\`}\`}\`}",
+    "interpolationRanges": [
+      {
+        "end": 87,
+        "start": 27,
+      },
+    ],
+    "locationStart": {
+      "column": 28,
+      "line": 1,
+    },
+    "rangeEnd": 87,
+    "rangeStart": 27,
+  },
+  {
+    "css": "color: red;\${css\`color: blue;\${css\`color: green;\`}\`}",
+    "interpolationRanges": [
+      {
+        "end": 85,
+        "start": 44,
+      },
+    ],
+    "locationStart": {
+      "column": 34,
+      "line": 1,
+    },
+    "rangeEnd": 85,
+    "rangeStart": 33,
+  },
+  {
+    "css": "color: blue;\${css\`color: green;\`}",
+    "interpolationRanges": [
+      {
+        "end": 83,
+        "start": 62,
+      },
+    ],
+    "locationStart": {
+      "column": 51,
+      "line": 1,
+    },
+    "rangeEnd": 83,
+    "rangeStart": 50,
+  },
+  {
+    "css": "color: green;",
+    "interpolationRanges": [],
+    "locationStart": {
+      "column": 69,
+      "line": 1,
+    },
+    "rangeEnd": 81,
+    "rangeStart": 68,
+  },
+]
+`;
+
+exports[`interpolations with css helper (many levels deep) two levels at the beginning 1`] = `
+[
+  {
+    "css": "\${css\`\${css\`color: blue\`} color: red;\`}",
+    "interpolationRanges": [
+      {
+        "end": 66,
+        "start": 27,
+      },
+    ],
+    "locationStart": {
+      "column": 28,
+      "line": 1,
+    },
+    "rangeEnd": 66,
+    "rangeStart": 27,
+  },
+  {
+    "css": "\${css\`color: blue\`} color: red;",
+    "interpolationRanges": [
+      {
+        "end": 52,
+        "start": 33,
+      },
+    ],
+    "locationStart": {
+      "column": 34,
+      "line": 1,
+    },
+    "rangeEnd": 64,
+    "rangeStart": 33,
+  },
+  {
+    "css": "color: blue",
+    "interpolationRanges": [],
+    "locationStart": {
+      "column": 40,
+      "line": 1,
+    },
+    "rangeEnd": 50,
+    "rangeStart": 39,
+  },
+]
+`;
+
+exports[`interpolations with css helper (many levels deep) two levels deep at the end 1`] = `
+[
+  {
+    "css": "\${css\`color: red;\${css\`color: blue\`}\`}",
+    "interpolationRanges": [
+      {
+        "end": 65,
+        "start": 27,
+      },
+    ],
+    "locationStart": {
+      "column": 28,
+      "line": 1,
+    },
+    "rangeEnd": 65,
+    "rangeStart": 27,
+  },
+  {
+    "css": "color: red;\${css\`color: blue\`}",
+    "interpolationRanges": [
+      {
+        "end": 63,
+        "start": 44,
+      },
+    ],
+    "locationStart": {
+      "column": 34,
+      "line": 1,
+    },
+    "rangeEnd": 63,
+    "rangeStart": 33,
+  },
+  {
+    "css": "color: blue",
+    "interpolationRanges": [],
+    "locationStart": {
+      "column": 51,
+      "line": 1,
+    },
+    "rangeEnd": 61,
+    "rangeStart": 50,
+  },
+]
+`;
+
+exports[`interpolations with css helper (one level deep) only two interpolations 1`] = `
+[
+  {
+    "css": "\${css\`color: red\`}\${css\`color: blue\`}",
+    "interpolationRanges": [
+      {
+        "end": 45,
+        "start": 27,
+      },
+      {
+        "end": 64,
+        "start": 45,
+      },
+    ],
+    "locationStart": {
+      "column": 28,
+      "line": 1,
+    },
+    "rangeEnd": 64,
+    "rangeStart": 27,
+  },
+  {
+    "css": "color: red",
+    "interpolationRanges": [],
+    "locationStart": {
+      "column": 34,
+      "line": 1,
+    },
+    "rangeEnd": 43,
+    "rangeStart": 33,
+  },
+  {
+    "css": "color: blue",
+    "interpolationRanges": [],
+    "locationStart": {
+      "column": 52,
+      "line": 1,
+    },
+    "rangeEnd": 62,
+    "rangeStart": 51,
+  },
+]
+`;
+
+exports[`interpolations with css helper (one level deep) single at the end 1`] = `
+[
+  {
+    "css": "color: green;\${css\`color: red\`}",
+    "interpolationRanges": [
+      {
+        "end": 58,
+        "start": 40,
+      },
+    ],
+    "locationStart": {
+      "column": 28,
+      "line": 1,
+    },
+    "rangeEnd": 58,
+    "rangeStart": 27,
+  },
+  {
+    "css": "color: red",
+    "interpolationRanges": [],
+    "locationStart": {
+      "column": 47,
+      "line": 1,
+    },
+    "rangeEnd": 56,
+    "rangeStart": 46,
+  },
+]
+`;
+
+exports[`interpolations with css helper (one level deep) single at the start 1`] = `
+[
+  {
+    "css": "\${css\`color: red\`} color: green;",
+    "interpolationRanges": [
+      {
+        "end": 45,
+        "start": 27,
+      },
+    ],
+    "locationStart": {
+      "column": 28,
+      "line": 1,
+    },
+    "rangeEnd": 59,
+    "rangeStart": 27,
+  },
+  {
+    "css": "color: red",
+    "interpolationRanges": [],
+    "locationStart": {
+      "column": 34,
+      "line": 1,
+    },
+    "rangeEnd": 43,
+    "rangeStart": 33,
+  },
+]
+`;
+
+exports[`interpolations with css helper (one level deep) single at the start and at the end 1`] = `
+[
+  {
+    "css": "\${css\`color: red\`} color: green;\${css\`color: blue\`}",
+    "interpolationRanges": [
+      {
+        "end": 45,
+        "start": 27,
+      },
+      {
+        "end": 78,
+        "start": 59,
+      },
+    ],
+    "locationStart": {
+      "column": 28,
+      "line": 1,
+    },
+    "rangeEnd": 78,
+    "rangeStart": 27,
+  },
+  {
+    "css": "color: red",
+    "interpolationRanges": [],
+    "locationStart": {
+      "column": 34,
+      "line": 1,
+    },
+    "rangeEnd": 43,
+    "rangeStart": 33,
+  },
+  {
+    "css": "color: blue",
+    "interpolationRanges": [],
+    "locationStart": {
+      "column": 66,
+      "line": 1,
+    },
+    "rangeEnd": 76,
+    "rangeStart": 65,
+  },
+]
+`;
+
+exports[`interpolations with props props with css helper (at the beginning) 1`] = `
+[
+  {
+    "css": "\${props => css\`color: red\`} color: green;",
+    "interpolationRanges": [
+      {
+        "end": 54,
+        "start": 27,
+      },
+    ],
+    "locationStart": {
+      "column": 28,
+      "line": 1,
+    },
+    "rangeEnd": 68,
+    "rangeStart": 27,
+  },
+  {
+    "css": "color: red",
+    "interpolationRanges": [],
+    "locationStart": {
+      "column": 43,
+      "line": 1,
+    },
+    "rangeEnd": 52,
+    "rangeStart": 42,
+  },
+]
+`;
+
+exports[`interpolations with props props with css helper (at the end) 1`] = `
+[
+  {
+    "css": "color: green;\${props => css\`color: red\`}",
+    "interpolationRanges": [
+      {
+        "end": 67,
+        "start": 40,
+      },
+    ],
+    "locationStart": {
+      "column": 28,
+      "line": 1,
+    },
+    "rangeEnd": 67,
+    "rangeStart": 27,
+  },
+  {
+    "css": "color: red",
+    "interpolationRanges": [],
+    "locationStart": {
+      "column": 56,
+      "line": 1,
+    },
+    "rangeEnd": 65,
+    "rangeStart": 55,
+  },
+]
+`;
+
+exports[`interpolations with props props with no styled helpers (at the beginning) 1`] = `
+[
+  {
+    "css": "\${props => \`color: red\`} color: green;",
+    "interpolationRanges": [
+      {
+        "end": 51,
+        "start": 27,
+      },
+    ],
+    "locationStart": {
+      "column": 28,
+      "line": 1,
+    },
+    "rangeEnd": 65,
+    "rangeStart": 27,
+  },
+]
+`;
+
+exports[`interpolations with props props with no styled helpers (at the end) 1`] = `
+[
+  {
+    "css": "color: green;\${props => \`color: red\`}",
+    "interpolationRanges": [
+      {
+        "end": 64,
+        "start": 40,
+      },
+    ],
+    "locationStart": {
+      "column": 28,
+      "line": 1,
+    },
+    "rangeEnd": 64,
+    "rangeStart": 27,
+  },
+]
+`;
+
+exports[`no interpolations comment in selector 1`] = `
+[
+  {
+    "css": "a, /* hello */ b { color: red; }",
+    "interpolationRanges": [],
+    "locationStart": {
+      "column": 28,
+      "line": 1,
+    },
+    "rangeEnd": 59,
+    "rangeStart": 27,
+  },
+]
+`;
+
+exports[`no interpolations empty component 1`] = `
+[
+  {
+    "css": "",
+    "interpolationRanges": [],
+    "locationStart": {
+      "column": 28,
+      "line": 1,
+    },
+    "rangeEnd": 27,
+    "rangeStart": 27,
+  },
+]
+`;
+
+exports[`no interpolations empty file 1`] = `[]`;
+
+exports[`no interpolations no components in a file 1`] = `[]`;
+
+exports[`no interpolations one component 1`] = `
+[
+  {
+    "css": "color: red;",
+    "interpolationRanges": [],
+    "locationStart": {
+      "column": 28,
+      "line": 1,
+    },
+    "rangeEnd": 38,
+    "rangeStart": 27,
+  },
+]
+`;
+
+exports[`no interpolations property on its row. extra space in the begining 1`] = `
+[
+  {
+    "css": " 
+	color: red;
+",
+    "interpolationRanges": [],
+    "locationStart": {
+      "column": 28,
+      "line": 1,
+    },
+    "rangeEnd": 42,
+    "rangeStart": 27,
+  },
+]
+`;
+
+exports[`no interpolations property on its row. no extra space 1`] = `
+[
+  {
+    "css": "
+	color: red;
+",
+    "interpolationRanges": [],
+    "locationStart": {
+      "column": 28,
+      "line": 1,
+    },
+    "rangeEnd": 41,
+    "rangeStart": 27,
+  },
+]
+`;
+
+exports[`no interpolations selector could be on multiple lines 1`] = `
+[
+  {
+    "css": "a,
+	b { color: red; }",
+    "interpolationRanges": [],
+    "locationStart": {
+      "column": 28,
+      "line": 1,
+    },
+    "rangeEnd": 48,
+    "rangeStart": 27,
+  },
+]
+`;
+
+exports[`no interpolations two components 1`] = `
+[
+  {
+    "css": "color: red;",
+    "interpolationRanges": [],
+    "locationStart": {
+      "column": 28,
+      "line": 1,
+    },
+    "rangeEnd": 38,
+    "rangeStart": 27,
+  },
+  {
+    "css": "border-color: blue",
+    "interpolationRanges": [],
+    "locationStart": {
+      "column": 28,
+      "line": 2,
+    },
+    "rangeEnd": 86,
+    "rangeStart": 68,
+  },
+]
+`;
+
+exports[`simple interpolations multiple standalone interpolations after declaration (no semicolon, no space after) 1`] = `
+[
+  {
+    "css": "color: red; \${borderWidth}\${borderWidth}",
+    "interpolationRanges": [
+      {
+        "end": 53,
+        "start": 39,
+      },
+      {
+        "end": 67,
+        "start": 53,
+      },
+    ],
+    "locationStart": {
+      "column": 28,
+      "line": 1,
+    },
+    "rangeEnd": 67,
+    "rangeStart": 27,
+  },
+]
+`;
+
+exports[`simple interpolations multiple standalone interpolations after declaration (no semicolon, space after) 1`] = `
+[
+  {
+    "css": "color: red; \${borderWidth} \${borderWidth} ",
+    "interpolationRanges": [
+      {
+        "end": 53,
+        "start": 39,
+      },
+      {
+        "end": 68,
+        "start": 54,
+      },
+    ],
+    "locationStart": {
+      "column": 28,
+      "line": 1,
+    },
+    "rangeEnd": 69,
+    "rangeStart": 27,
+  },
+]
+`;
+
+exports[`simple interpolations multiple standalone interpolations after declaration (with semicolon) 1`] = `
+[
+  {
+    "css": "color: red; \${borderWidth} \${borderWidth};",
+    "interpolationRanges": [
+      {
+        "end": 53,
+        "start": 39,
+      },
+      {
+        "end": 68,
+        "start": 54,
+      },
+    ],
+    "locationStart": {
+      "column": 28,
+      "line": 1,
+    },
+    "rangeEnd": 69,
+    "rangeStart": 27,
+  },
+]
+`;
+
+exports[`simple interpolations multiple standalone interpolations as the only content (no semicolon) 1`] = `
+[
+  {
+    "css": "\${color}\${color}",
+    "interpolationRanges": [
+      {
+        "end": 35,
+        "start": 27,
+      },
+      {
+        "end": 43,
+        "start": 35,
+      },
+    ],
+    "locationStart": {
+      "column": 28,
+      "line": 1,
+    },
+    "rangeEnd": 43,
+    "rangeStart": 27,
+  },
+]
+`;
+
+exports[`simple interpolations multiple standalone interpolations as the only content (with semicolon) 1`] = `
+[
+  {
+    "css": "\${color}\${color};",
+    "interpolationRanges": [
+      {
+        "end": 35,
+        "start": 27,
+      },
+      {
+        "end": 43,
+        "start": 35,
+      },
+    ],
+    "locationStart": {
+      "column": 28,
+      "line": 1,
+    },
+    "rangeEnd": 44,
+    "rangeStart": 27,
+  },
+]
+`;
+
+exports[`simple interpolations multiple standalone interpolations before comment (no semicolon, with space) 1`] = `
+[
+  {
+    "css": "\${borderWidth}\${background} /* hello */",
+    "interpolationRanges": [
+      {
+        "end": 41,
+        "start": 27,
+      },
+      {
+        "end": 54,
+        "start": 41,
+      },
+    ],
+    "locationStart": {
+      "column": 28,
+      "line": 1,
+    },
+    "rangeEnd": 66,
+    "rangeStart": 27,
+  },
+]
+`;
+
+exports[`simple interpolations multiple standalone interpolations before declaration (no semicolon, no space) 1`] = `
+[
+  {
+    "css": "\${borderWidth} \${background}color: red",
+    "interpolationRanges": [
+      {
+        "end": 41,
+        "start": 27,
+      },
+      {
+        "end": 55,
+        "start": 42,
+      },
+    ],
+    "locationStart": {
+      "column": 28,
+      "line": 1,
+    },
+    "rangeEnd": 65,
+    "rangeStart": 27,
+  },
+]
+`;
+
+exports[`simple interpolations multiple standalone interpolations before declaration (no semicolon, with space) 1`] = `
+[
+  {
+    "css": "\${borderWidth}\${background} color: red",
+    "interpolationRanges": [
+      {
+        "end": 41,
+        "start": 27,
+      },
+      {
+        "end": 54,
+        "start": 41,
+      },
+    ],
+    "locationStart": {
+      "column": 28,
+      "line": 1,
+    },
+    "rangeEnd": 65,
+    "rangeStart": 27,
+  },
+]
+`;
+
+exports[`simple interpolations multiple standalone interpolations before declaration (no semicolon, with space, three interpolations) 1`] = `
+[
+  {
+    "css": "\${borderWidth}\${background}\${display} color: red",
+    "interpolationRanges": [
+      {
+        "end": 41,
+        "start": 27,
+      },
+      {
+        "end": 54,
+        "start": 41,
+      },
+      {
+        "end": 64,
+        "start": 54,
+      },
+    ],
+    "locationStart": {
+      "column": 28,
+      "line": 1,
+    },
+    "rangeEnd": 75,
+    "rangeStart": 27,
+  },
+]
+`;
+
+exports[`simple interpolations multiple standalone interpolations before declaration (with semicolon and space) 1`] = `
+[
+  {
+    "css": "\${borderWidth}\${borderWidth}; color: red",
+    "interpolationRanges": [
+      {
+        "end": 41,
+        "start": 27,
+      },
+      {
+        "end": 55,
+        "start": 41,
+      },
+    ],
+    "locationStart": {
+      "column": 28,
+      "line": 1,
+    },
+    "rangeEnd": 67,
+    "rangeStart": 27,
+  },
+]
+`;
+
+exports[`simple interpolations multiple standalone interpolations before declaration (with semicolon) 1`] = `
+[
+  {
+    "css": "\${borderWidth}\${borderWidth};color: red",
+    "interpolationRanges": [
+      {
+        "end": 41,
+        "start": 27,
+      },
+      {
+        "end": 55,
+        "start": 41,
+      },
+    ],
+    "locationStart": {
+      "column": 28,
+      "line": 1,
+    },
+    "rangeEnd": 66,
+    "rangeStart": 27,
+  },
+]
+`;
+
+exports[`simple interpolations multiple standalone interpolations before declaration (with space) 1`] = `
+[
+  {
+    "css": "\${borderWidth} \${borderWidth} color: red",
+    "interpolationRanges": [
+      {
+        "end": 41,
+        "start": 27,
+      },
+      {
+        "end": 56,
+        "start": 42,
+      },
+    ],
+    "locationStart": {
+      "column": 28,
+      "line": 1,
+    },
+    "rangeEnd": 67,
+    "rangeStart": 27,
+  },
+]
+`;
+
+exports[`simple interpolations multiple standalone interpolations between two declarations (no semicolon) 1`] = `
+[
+  {
+    "css": "color: red; \${borderWidth} \${borderWidth} border-color: blue;",
+    "interpolationRanges": [
+      {
+        "end": 53,
+        "start": 39,
+      },
+      {
+        "end": 68,
+        "start": 54,
+      },
+    ],
+    "locationStart": {
+      "column": 28,
+      "line": 1,
+    },
+    "rangeEnd": 88,
+    "rangeStart": 27,
+  },
+]
+`;
+
+exports[`simple interpolations multiple standalone interpolations between two declarations (with semicolon) 1`] = `
+[
+  {
+    "css": "color: red; \${borderWidth} \${borderWidth}; border-color: blue;",
+    "interpolationRanges": [
+      {
+        "end": 53,
+        "start": 39,
+      },
+      {
+        "end": 68,
+        "start": 54,
+      },
+    ],
+    "locationStart": {
+      "column": 28,
+      "line": 1,
+    },
+    "rangeEnd": 89,
+    "rangeStart": 27,
+  },
+]
+`;
+
+exports[`simple interpolations properties property name (first property) 1`] = `
+[
+  {
+    "css": "\${color}: red",
+    "interpolationRanges": [
+      {
+        "end": 35,
+        "start": 27,
+      },
+    ],
+    "locationStart": {
+      "column": 28,
+      "line": 1,
+    },
+    "rangeEnd": 40,
+    "rangeStart": 27,
+  },
+]
+`;
+
+exports[`simple interpolations properties property name (second property) 1`] = `
+[
+  {
+    "css": "display: flex; \${color}: red",
+    "interpolationRanges": [
+      {
+        "end": 50,
+        "start": 42,
+      },
+    ],
+    "locationStart": {
+      "column": 28,
+      "line": 1,
+    },
+    "rangeEnd": 55,
+    "rangeStart": 27,
+  },
+]
+`;
+
+exports[`simple interpolations properties property value (no semicolon) 1`] = `
+[
+  {
+    "css": "color: \${red}",
+    "interpolationRanges": [
+      {
+        "end": 40,
+        "start": 34,
+      },
+    ],
+    "locationStart": {
+      "column": 28,
+      "line": 1,
+    },
+    "rangeEnd": 40,
+    "rangeStart": 27,
+  },
+]
+`;
+
+exports[`simple interpolations properties property value (with semicolon) 1`] = `
+[
+  {
+    "css": "color: \${red};",
+    "interpolationRanges": [
+      {
+        "end": 40,
+        "start": 34,
+      },
+    ],
+    "locationStart": {
+      "column": 28,
+      "line": 1,
+    },
+    "rangeEnd": 41,
+    "rangeStart": 27,
+  },
+]
+`;
+
+exports[`simple interpolations properties property value and !important (no semicolon) 1`] = `
+[
+  {
+    "css": "color: \${red} !important",
+    "interpolationRanges": [
+      {
+        "end": 40,
+        "start": 34,
+      },
+    ],
+    "locationStart": {
+      "column": 28,
+      "line": 1,
+    },
+    "rangeEnd": 51,
+    "rangeStart": 27,
+  },
+]
+`;
+
+exports[`simple interpolations properties property value and !important (with semicolon) 1`] = `
+[
+  {
+    "css": "color: \${red} !important;",
+    "interpolationRanges": [
+      {
+        "end": 40,
+        "start": 34,
+      },
+    ],
+    "locationStart": {
+      "column": 28,
+      "line": 1,
+    },
+    "rangeEnd": 52,
+    "rangeStart": 27,
+  },
+]
+`;
+
+exports[`simple interpolations properties property value with interpolation inside url function 1`] = `
+[
+  {
+    "css": "background-image: url(\${imageUrl})",
+    "interpolationRanges": [
+      {
+        "end": 60,
+        "start": 49,
+      },
+    ],
+    "locationStart": {
+      "column": 28,
+      "line": 1,
+    },
+    "rangeEnd": 61,
+    "rangeStart": 27,
+  },
+]
+`;
+
+exports[`simple interpolations properties property value with props interpolation 1`] = `
+[
+  {
+    "css": "background-image: \${(props) => props.backgroundImage}",
+    "interpolationRanges": [
+      {
+        "end": 80,
+        "start": 45,
+      },
+    ],
+    "locationStart": {
+      "column": 28,
+      "line": 1,
+    },
+    "rangeEnd": 80,
+    "rangeStart": 27,
+  },
+]
+`;
+
+exports[`simple interpolations properties property value with props interpolation inside url function 1`] = `
+[
+  {
+    "css": "background-image: url(\${(props) => props.backgroundImage})",
+    "interpolationRanges": [
+      {
+        "end": 84,
+        "start": 49,
+      },
+    ],
+    "locationStart": {
+      "column": 28,
+      "line": 1,
+    },
+    "rangeEnd": 85,
+    "rangeStart": 27,
+  },
+]
+`;
+
+exports[`simple interpolations properties property value with symbol right before interpolation 1`] = `
+[
+  {
+    "css": "margin: -\${space}",
+    "interpolationRanges": [
+      {
+        "end": 44,
+        "start": 36,
+      },
+    ],
+    "locationStart": {
+      "column": 28,
+      "line": 1,
+    },
+    "rangeEnd": 44,
+    "rangeStart": 27,
+  },
+]
+`;
+
+exports[`simple interpolations properties property value with two interpolations 1`] = `
+[
+  {
+    "css": "box-shadow: \${elevation1}, \${elevation2}",
+    "interpolationRanges": [
+      {
+        "end": 52,
+        "start": 39,
+      },
+      {
+        "end": 67,
+        "start": 54,
+      },
+    ],
+    "locationStart": {
+      "column": 28,
+      "line": 1,
+    },
+    "rangeEnd": 67,
+    "rangeStart": 27,
+  },
+]
+`;
+
+exports[`simple interpolations selectors comment in selector with interpolation 1`] = `
+[
+  {
+    "css": "\${Card}:hover, /* hello */ b { color: red; }",
+    "interpolationRanges": [
+      {
+        "end": 34,
+        "start": 27,
+      },
+    ],
+    "locationStart": {
+      "column": 28,
+      "line": 1,
+    },
+    "rangeEnd": 71,
+    "rangeStart": 27,
+  },
+]
+`;
+
+exports[`simple interpolations selectors in selector (first part is interpolation, one selector) 1`] = `
+[
+  {
+    "css": "\${Component} a { color: red; }",
+    "interpolationRanges": [
+      {
+        "end": 39,
+        "start": 27,
+      },
+    ],
+    "locationStart": {
+      "column": 28,
+      "line": 1,
+    },
+    "rangeEnd": 57,
+    "rangeStart": 27,
+  },
+]
+`;
+
+exports[`simple interpolations selectors in selector (first selector is interpolation) 1`] = `
+[
+  {
+    "css": "\${Component}, a { color: red; }",
+    "interpolationRanges": [
+      {
+        "end": 39,
+        "start": 27,
+      },
+    ],
+    "locationStart": {
+      "column": 28,
+      "line": 1,
+    },
+    "rangeEnd": 58,
+    "rangeStart": 27,
+  },
+]
+`;
+
+exports[`simple interpolations selectors in selector (second part is interpolation, one selector) 1`] = `
+[
+  {
+    "css": "a \${Component} { color: red; }",
+    "interpolationRanges": [
+      {
+        "end": 41,
+        "start": 29,
+      },
+    ],
+    "locationStart": {
+      "column": 28,
+      "line": 1,
+    },
+    "rangeEnd": 57,
+    "rangeStart": 27,
+  },
+]
+`;
+
+exports[`simple interpolations selectors in selector (second selector is interpolation, two selectors) 1`] = `
+[
+  {
+    "css": "a, \${Component} { color: red; }",
+    "interpolationRanges": [
+      {
+        "end": 42,
+        "start": 30,
+      },
+    ],
+    "locationStart": {
+      "column": 28,
+      "line": 1,
+    },
+    "rangeEnd": 58,
+    "rangeStart": 27,
+  },
+]
+`;
+
+exports[`simple interpolations selectors in selector (whole selector starts with a dot) 1`] = `
+[
+  {
+    "css": ".\${Component} { color: red; }",
+    "interpolationRanges": [
+      {
+        "end": 40,
+        "start": 28,
+      },
+    ],
+    "locationStart": {
+      "column": 28,
+      "line": 1,
+    },
+    "rangeEnd": 56,
+    "rangeStart": 27,
+  },
+]
+`;
+
+exports[`simple interpolations selectors in selector (whole selector) 1`] = `
+[
+  {
+    "css": "\${Component} { color: red; }",
+    "interpolationRanges": [
+      {
+        "end": 39,
+        "start": 27,
+      },
+    ],
+    "locationStart": {
+      "column": 28,
+      "line": 1,
+    },
+    "rangeEnd": 55,
+    "rangeStart": 27,
+  },
+]
+`;
+
+exports[`simple interpolations selectors interpolation on a new line before selector 1`] = `
+[
+  {
+    "css": "\${hello}
+	a { color: red; }",
+    "interpolationRanges": [
+      {
+        "end": 35,
+        "start": 27,
+      },
+    ],
+    "locationStart": {
+      "column": 28,
+      "line": 1,
+    },
+    "rangeEnd": 54,
+    "rangeStart": 27,
+  },
+]
+`;
+
+exports[`simple interpolations selectors interpolation with semicolon before selector 1`] = `
+[
+  {
+    "css": "\${Component}; a { color: red; }",
+    "interpolationRanges": [
+      {
+        "end": 39,
+        "start": 27,
+      },
+    ],
+    "locationStart": {
+      "column": 28,
+      "line": 1,
+    },
+    "rangeEnd": 58,
+    "rangeStart": 27,
+  },
+]
+`;
+
+exports[`simple interpolations standalone interpolation after comment (no semicolon) 1`] = `
+[
+  {
+    "css": "/* hello */ \${borderWidth}",
+    "interpolationRanges": [
+      {
+        "end": 53,
+        "start": 39,
+      },
+    ],
+    "locationStart": {
+      "column": 28,
+      "line": 1,
+    },
+    "rangeEnd": 53,
+    "rangeStart": 27,
+  },
+]
+`;
+
+exports[`simple interpolations standalone interpolation after comment (with semicolon) 1`] = `
+[
+  {
+    "css": "/* hello */ \${borderWidth};",
+    "interpolationRanges": [
+      {
+        "end": 53,
+        "start": 39,
+      },
+    ],
+    "locationStart": {
+      "column": 28,
+      "line": 1,
+    },
+    "rangeEnd": 54,
+    "rangeStart": 27,
+  },
+]
+`;
+
+exports[`simple interpolations standalone interpolation after declaration (no semicolon, no space after) 1`] = `
+[
+  {
+    "css": "color: red; \${borderWidth}",
+    "interpolationRanges": [
+      {
+        "end": 53,
+        "start": 39,
+      },
+    ],
+    "locationStart": {
+      "column": 28,
+      "line": 1,
+    },
+    "rangeEnd": 53,
+    "rangeStart": 27,
+  },
+]
+`;
+
+exports[`simple interpolations standalone interpolation after declaration (no semicolon, space after) 1`] = `
+[
+  {
+    "css": "color: red; \${borderWidth} ",
+    "interpolationRanges": [
+      {
+        "end": 53,
+        "start": 39,
+      },
+    ],
+    "locationStart": {
+      "column": 28,
+      "line": 1,
+    },
+    "rangeEnd": 54,
+    "rangeStart": 27,
+  },
+]
+`;
+
+exports[`simple interpolations standalone interpolation after declaration (with semicolon) 1`] = `
+[
+  {
+    "css": "color: red; \${borderWidth};",
+    "interpolationRanges": [
+      {
+        "end": 53,
+        "start": 39,
+      },
+    ],
+    "locationStart": {
+      "column": 28,
+      "line": 1,
+    },
+    "rangeEnd": 54,
+    "rangeStart": 27,
+  },
+]
+`;
+
+exports[`simple interpolations standalone interpolation as the only content (no semicolon) 1`] = `
+[
+  {
+    "css": "\${color}",
+    "interpolationRanges": [
+      {
+        "end": 35,
+        "start": 27,
+      },
+    ],
+    "locationStart": {
+      "column": 28,
+      "line": 1,
+    },
+    "rangeEnd": 35,
+    "rangeStart": 27,
+  },
+]
+`;
+
+exports[`simple interpolations standalone interpolation as the only content (with semicolon) 1`] = `
+[
+  {
+    "css": "\${color};",
+    "interpolationRanges": [
+      {
+        "end": 35,
+        "start": 27,
+      },
+    ],
+    "locationStart": {
+      "column": 28,
+      "line": 1,
+    },
+    "rangeEnd": 36,
+    "rangeStart": 27,
+  },
+]
+`;
+
+exports[`simple interpolations standalone interpolation before at-rule (with semicolon) 1`] = `
+[
+  {
+    "css": "\${borderWidth};@media screen {}",
+    "interpolationRanges": [
+      {
+        "end": 41,
+        "start": 27,
+      },
+    ],
+    "locationStart": {
+      "column": 28,
+      "line": 1,
+    },
+    "rangeEnd": 58,
+    "rangeStart": 27,
+  },
+]
+`;
+
+exports[`simple interpolations standalone interpolation before at-rule (without semicolon) 1`] = `
+[
+  {
+    "css": "\${borderWidth} @media screen {}",
+    "interpolationRanges": [
+      {
+        "end": 41,
+        "start": 27,
+      },
+    ],
+    "locationStart": {
+      "column": 28,
+      "line": 1,
+    },
+    "rangeEnd": 58,
+    "rangeStart": 27,
+  },
+]
+`;
+
+exports[`simple interpolations standalone interpolation before comment (no semicolon, no space) 1`] = `
+[
+  {
+    "css": "\${borderWidth}/* hello */",
+    "interpolationRanges": [
+      {
+        "end": 41,
+        "start": 27,
+      },
+    ],
+    "locationStart": {
+      "column": 28,
+      "line": 1,
+    },
+    "rangeEnd": 52,
+    "rangeStart": 27,
+  },
+]
+`;
+
+exports[`simple interpolations standalone interpolation before comment (no semicolon, with space) 1`] = `
+[
+  {
+    "css": "\${borderWidth} /* hello */",
+    "interpolationRanges": [
+      {
+        "end": 41,
+        "start": 27,
+      },
+    ],
+    "locationStart": {
+      "column": 28,
+      "line": 1,
+    },
+    "rangeEnd": 53,
+    "rangeStart": 27,
+  },
+]
+`;
+
+exports[`simple interpolations standalone interpolation before comment (with semicolon and space) 1`] = `
+[
+  {
+    "css": "\${borderWidth}; /* hello */",
+    "interpolationRanges": [
+      {
+        "end": 41,
+        "start": 27,
+      },
+    ],
+    "locationStart": {
+      "column": 28,
+      "line": 1,
+    },
+    "rangeEnd": 54,
+    "rangeStart": 27,
+  },
+]
+`;
+
+exports[`simple interpolations standalone interpolation before comment (with semicolon, no space) 1`] = `
+[
+  {
+    "css": "\${borderWidth};/* hello */",
+    "interpolationRanges": [
+      {
+        "end": 41,
+        "start": 27,
+      },
+    ],
+    "locationStart": {
+      "column": 28,
+      "line": 1,
+    },
+    "rangeEnd": 53,
+    "rangeStart": 27,
+  },
+]
+`;
+
+exports[`simple interpolations standalone interpolation before declaration (no semicolon, no space) 1`] = `
+[
+  {
+    "css": "\${borderWidth}color: red",
+    "interpolationRanges": [
+      {
+        "end": 41,
+        "start": 27,
+      },
+    ],
+    "locationStart": {
+      "column": 28,
+      "line": 1,
+    },
+    "rangeEnd": 51,
+    "rangeStart": 27,
+  },
+]
+`;
+
+exports[`simple interpolations standalone interpolation before declaration (with semicolon and space) 1`] = `
+[
+  {
+    "css": "\${borderWidth}; color: red",
+    "interpolationRanges": [
+      {
+        "end": 41,
+        "start": 27,
+      },
+    ],
+    "locationStart": {
+      "column": 28,
+      "line": 1,
+    },
+    "rangeEnd": 53,
+    "rangeStart": 27,
+  },
+]
+`;
+
+exports[`simple interpolations standalone interpolation before declaration (with semicolon) 1`] = `
+[
+  {
+    "css": "\${borderWidth};color: red",
+    "interpolationRanges": [
+      {
+        "end": 41,
+        "start": 27,
+      },
+    ],
+    "locationStart": {
+      "column": 28,
+      "line": 1,
+    },
+    "rangeEnd": 52,
+    "rangeStart": 27,
+  },
+]
+`;
+
+exports[`simple interpolations standalone interpolation before declaration (with space) 1`] = `
+[
+  {
+    "css": "\${borderWidth} color: red",
+    "interpolationRanges": [
+      {
+        "end": 41,
+        "start": 27,
+      },
+    ],
+    "locationStart": {
+      "column": 28,
+      "line": 1,
+    },
+    "rangeEnd": 52,
+    "rangeStart": 27,
+  },
+]
+`;
+
+exports[`simple interpolations standalone interpolation between three declarations (no semicolon) 1`] = `
+[
+  {
+    "css": "color: red; \${borderWidth} border-color: blue; \${anotherThing} display: none;",
+    "interpolationRanges": [
+      {
+        "end": 53,
+        "start": 39,
+      },
+      {
+        "end": 89,
+        "start": 74,
+      },
+    ],
+    "locationStart": {
+      "column": 28,
+      "line": 1,
+    },
+    "rangeEnd": 104,
+    "rangeStart": 27,
+  },
+]
+`;
+
+exports[`simple interpolations standalone interpolation between two declarations (no semicolon) 1`] = `
+[
+  {
+    "css": "color: red; \${borderWidth} border-color: blue;",
+    "interpolationRanges": [
+      {
+        "end": 53,
+        "start": 39,
+      },
+    ],
+    "locationStart": {
+      "column": 28,
+      "line": 1,
+    },
+    "rangeEnd": 73,
+    "rangeStart": 27,
+  },
+]
+`;
+
+exports[`simple interpolations standalone interpolation between two declarations (with semicolon) 1`] = `
+[
+  {
+    "css": "color: red; \${borderWidth}; border-color: blue;",
+    "interpolationRanges": [
+      {
+        "end": 53,
+        "start": 39,
+      },
+    ],
+    "locationStart": {
+      "column": 28,
+      "line": 1,
+    },
+    "rangeEnd": 74,
+    "rangeStart": 27,
+  },
+]
+`;
+
+exports[`simple interpolations standalone interpolation between two declarations, and also trailing interpolation 1`] = `
+[
+  {
+    "css": "color: red; \${ borderWidth} border-color: blue; \${anotherThing}",
+    "interpolationRanges": [
+      {
+        "end": 54,
+        "start": 39,
+      },
+      {
+        "end": 90,
+        "start": 75,
+      },
+    ],
+    "locationStart": {
+      "column": 28,
+      "line": 1,
+    },
+    "rangeEnd": 90,
+    "rangeStart": 27,
+  },
+]
+`;
+
+exports[`simple interpolations standalone interpolation multiple after declaration (no semicolon, space after) 1`] = `
+[
+  {
+    "css": "color: red; \${borderWidth} \${hello} ",
+    "interpolationRanges": [
+      {
+        "end": 53,
+        "start": 39,
+      },
+      {
+        "end": 62,
+        "start": 54,
+      },
+    ],
+    "locationStart": {
+      "column": 28,
+      "line": 1,
+    },
+    "rangeEnd": 63,
+    "rangeStart": 27,
+  },
+]
+`;
+
+exports[`supports TypeScript 1`] = `
+[
+  {
+    "css": "color: red;",
+    "interpolationRanges": [],
+    "locationStart": {
+      "column": 55,
+      "line": 1,
+    },
+    "rangeEnd": 65,
+    "rangeStart": 54,
+  },
+]
+`;
