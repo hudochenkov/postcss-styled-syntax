@@ -3,6 +3,11 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## 0.6.0
+* Use TypeScript instead of @typescript-eslint/typescript-estree for parsing. This fixes “unsupported TypeScript version” messages and reduces install size.
+* Fix parsing for two interpolations before rule selector. Fixes #24
+* Drop support for Node.js 14 and 16
+
 ## 0.5.0
 * Moved `typescript` from `peerDependencies` to `dependencies`. This should also remove “unsupported TypeScript version” messages. Your project doesn't need to be a TypeScript project. `typescript` package is used as a parser for JavaScript and TypeScript files.
 
