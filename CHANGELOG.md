@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## 0.6.1
+* Fix interpolation ranges if there is a comment inside an interpolation
+* Catch more JavaScript parsing errors
+
 ## 0.6.0
 * Use TypeScript instead of @typescript-eslint/typescript-estree for parsing. This fixes “unsupported TypeScript version” messages and reduces install size.
 * Fix parsing for two interpolations before rule selector. Fixes #24
