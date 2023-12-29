@@ -1220,6 +1220,46 @@ exports[`simple interpolations properties property value with two interpolations
 ]
 `;
 
+exports[`simple interpolations properties property value. interpolation with a comment after value 1`] = `
+[
+  {
+    "css": "color: \${red /* hello */}",
+    "interpolationRanges": [
+      {
+        "end": 52,
+        "start": 34,
+      },
+    ],
+    "locationStart": {
+      "column": 28,
+      "line": 1,
+    },
+    "rangeEnd": 52,
+    "rangeStart": 27,
+  },
+]
+`;
+
+exports[`simple interpolations properties property value. interpolation with a comment before value 1`] = `
+[
+  {
+    "css": "color: \${/* hello */ red}",
+    "interpolationRanges": [
+      {
+        "end": 52,
+        "start": 34,
+      },
+    ],
+    "locationStart": {
+      "column": 28,
+      "line": 1,
+    },
+    "rangeEnd": 52,
+    "rangeStart": 27,
+  },
+]
+`;
+
 exports[`simple interpolations selectors comment in selector with interpolation 1`] = `
 [
   {
