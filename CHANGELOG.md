@@ -3,6 +3,9 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## 0.6.2
+* Fix a JS parsing issue if a comment between a tag function and template literal is present
+
 ## 0.6.1
 * Fix interpolation ranges if there is a comment inside an interpolation
 * Catch more JavaScript parsing errors
