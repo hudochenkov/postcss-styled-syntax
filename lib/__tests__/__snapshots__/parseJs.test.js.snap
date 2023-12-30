@@ -1,5 +1,40 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`comment between tag function and template literal. with interpolation 1`] = `
+[
+  {
+    "css": "color: \${red};",
+    "interpolationRanges": [
+      {
+        "end": 78,
+        "start": 72,
+      },
+    ],
+    "locationStart": {
+      "column": 56,
+      "line": 1,
+    },
+    "rangeEnd": 79,
+    "rangeStart": 65,
+  },
+]
+`;
+
+exports[`comment between tag function and template literal. without interpolation 1`] = `
+[
+  {
+    "css": "color: red;",
+    "interpolationRanges": [],
+    "locationStart": {
+      "column": 56,
+      "line": 1,
+    },
+    "rangeEnd": 76,
+    "rangeStart": 65,
+  },
+]
+`;
+
 exports[`component after a component with interpolation 1`] = `
 [
   {
