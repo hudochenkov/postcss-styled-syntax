@@ -3,17 +3,20 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## 0.6.3
+* Fixed interpolation range if comment after interpolation has a backslash
+
 ## 0.6.2
-* Fix a JS parsing issue if a comment between a tag function and template literal is present
+* Fixed a JS parsing issue if a comment between a tag function and template literal is present
 
 ## 0.6.1
-* Fix interpolation ranges if there is a comment inside an interpolation
+* Fixed interpolation ranges if there is a comment inside an interpolation
 * Catch more JavaScript parsing errors
 
 ## 0.6.0
 * Use TypeScript instead of @typescript-eslint/typescript-estree for parsing. This fixes “unsupported TypeScript version” messages and reduces install size.
-* Fix parsing for two interpolations before rule selector. Fixes #24
-* Drop support for Node.js 14 and 16
+* Fixed parsing for two interpolations before rule selector. Fixes #24
+* Dropped support for Node.js 14 and 16
 
 ## 0.5.0
 * Moved `typescript` from `peerDependencies` to `dependencies`. This should also remove “unsupported TypeScript version” messages. Your project doesn't need to be a TypeScript project. `typescript` package is used as a parser for JavaScript and TypeScript files.
@@ -22,7 +25,7 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 * Added `raws.isRuleLike` to all Roots. Enable PostCSS and Stylelint to adjust to CSS-in-JS quirks. E. g. if something processes only rules, it could also process `root` if this flag is present
 
 ## 0.3.3
-* Fix: Catch JavaScript parsing errors
+* Fixed: Catch JavaScript parsing errors
 
 ## 0.3.2
 * Fixed stringifier mutating AST
