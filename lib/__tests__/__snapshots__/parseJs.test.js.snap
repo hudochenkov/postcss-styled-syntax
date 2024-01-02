@@ -1736,6 +1736,26 @@ exports[`simple interpolations standalone interpolation before comment (with sem
 ]
 `;
 
+exports[`simple interpolations standalone interpolation before comment. comment with a backslash 1`] = `
+[
+  {
+    "css": "\${borderWidth};/* comment with a backslash \\ */",
+    "interpolationRanges": [
+      {
+        "end": 41,
+        "start": 27,
+      },
+    ],
+    "locationStart": {
+      "column": 28,
+      "line": 1,
+    },
+    "rangeEnd": 74,
+    "rangeStart": 27,
+  },
+]
+`;
+
 exports[`simple interpolations standalone interpolation before declaration (no semicolon, no space) 1`] = `
 [
   {
