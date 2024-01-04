@@ -599,6 +599,21 @@ exports[`no interpolations empty component 1`] = `
 
 exports[`no interpolations empty file 1`] = `[]`;
 
+exports[`no interpolations escaped characters in the code 1`] = `
+[
+  {
+    "css": "content: "\\u200B";",
+    "interpolationRanges": [],
+    "locationStart": {
+      "column": 28,
+      "line": 1,
+    },
+    "rangeEnd": 45,
+    "rangeStart": 27,
+  },
+]
+`;
+
 exports[`no interpolations no components in a file 1`] = `[]`;
 
 exports[`no interpolations one component 1`] = `
