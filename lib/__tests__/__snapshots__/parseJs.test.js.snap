@@ -107,6 +107,36 @@ exports[`component notations css 1`] = `
 ]
 `;
 
+exports[`component notations passing a function 1`] = `
+[
+  {
+    "css": "color: red;",
+    "interpolationRanges": [],
+    "locationStart": {
+      "column": 37,
+      "line": 1,
+    },
+    "rangeEnd": 48,
+    "rangeStart": 37,
+  },
+]
+`;
+
+exports[`component notations passing a function 2 1`] = `
+[
+  {
+    "css": "color: red;",
+    "interpolationRanges": [],
+    "locationStart": {
+      "column": 40,
+      "line": 1,
+    },
+    "rangeEnd": 51,
+    "rangeStart": 40,
+  },
+]
+`;
+
 exports[`component notations styled(Component) 1`] = `
 [
   {

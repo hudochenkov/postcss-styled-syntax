@@ -9,12 +9,14 @@ Syntax supports:
 - Interpolations in selectors, property names, and values
 - JavaScript and TypeScript (including files with JSX)
 - All functions:
-	- `styled.foo`
-	- `styled(Component)`
-	- `styled.foo.attrs({})`
-	- `styled(Component).attrs({})`
-	- `css`
-	- `createGlobalStyle`
+	- <code>styled.foo``</code>
+	- <code>styled(Component)``</code>
+	- <code>styled.foo.attrs({})``</code>
+	- <code>styled(Component).attrs({})``</code>
+	- <code>styled.foo(props => ``)</code>
+	- <code>styled(Component)(props => ``)</code>
+	- <code>css``</code>
+	- <code>createGlobalStyle``</code>
 
 ```js
 let Component = styled.p`
