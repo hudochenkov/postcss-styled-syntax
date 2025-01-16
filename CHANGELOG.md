@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## 0.7.1
+
+* Improved nodes range detection
+
 ## 0.7.0
 * Added support for passing a function to `styled` instead using it as a tagged template. For example, <code>styled.div(props => \`color: red;\`)</code>, or <code>styled(Component)(props => \`color: red;\`)</code>
 
