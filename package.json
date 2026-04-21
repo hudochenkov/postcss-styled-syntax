@@ -40,7 +40,7 @@
 	},
 	"prettier": "prettier-config-hudochenkov",
 	"dependencies": {
-		"typescript": "^5.7.3"
+		"oxc-parser": "^0.127.0"
 	},
 	"peerDependencies": {
 		"postcss": "^8.5.1"
@@ -55,7 +55,8 @@
 		"jest-watch-typeahead": "^2.2.2",
 		"postcss": "^8.5.1",
 		"prettier": "^3.4.2",
-		"prettier-config-hudochenkov": "^0.4.0"
+		"prettier-config-hudochenkov": "^0.4.0",
+		"typescript": "^6.0.3"
 	},
 	"engines": {
 		"node": ">=14.17"

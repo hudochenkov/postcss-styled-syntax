@@ -11,7 +11,7 @@ exports[`comment between tag function and template literal. with interpolation 1
       },
     ],
     "locationStart": {
-      "column": 56,
+      "column": 66,
       "line": 1,
     },
     "rangeEnd": 79,
@@ -26,7 +26,7 @@ exports[`comment between tag function and template literal. without interpolatio
     "css": "color: red;",
     "interpolationRanges": [],
     "locationStart": {
-      "column": 56,
+      "column": 66,
       "line": 1,
     },
     "rangeEnd": 76,
@@ -113,7 +113,7 @@ exports[`component notations passing a function 1`] = `
     "css": "color: red;",
     "interpolationRanges": [],
     "locationStart": {
-      "column": 37,
+      "column": 38,
       "line": 1,
     },
     "rangeEnd": 48,
@@ -128,7 +128,7 @@ exports[`component notations passing a function 2 1`] = `
     "css": "color: red;",
     "interpolationRanges": [],
     "locationStart": {
-      "column": 40,
+      "column": 41,
       "line": 1,
     },
     "rangeEnd": 51,
