@@ -5,12 +5,13 @@
 		"target": "ES2020",
 		"lib": ["es2020"],
 		"esModuleInterop": true,
-		"moduleResolution": "node",
+		"moduleResolution": "bundler",
 		"module": "commonjs",
 		"noEmit": true,
 		"allowJs": true,
 		"skipLibCheck": true,
-		"checkJs": true
+		"checkJs": true,
+		"types": ["jest"]
 	},
 	"exclude": ["./**/node_modules/**/*"],
 	"include": ["./lib/**/*.js"]
