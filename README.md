@@ -49,7 +49,7 @@ Stylelint [custom syntax documentation](https://stylelint.io/user-guide/usage/op
 Install syntax and add to a PostCSS config:
 
 ```js
-module.exports = {
+export default {
 	syntax: 'postcss-styled-syntax',
 	plugins: [ /* ... */ ],
 };

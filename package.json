@@ -2,18 +2,19 @@
 	"name": "postcss-styled-syntax",
 	"version": "0.7.1",
 	"description": "PostCSS syntax for template literals CSS-in-JS (e. g. styled-components).",
-	"main": "lib/index.js",
+	"type": "module",
+	"exports": "./lib/index.js",
 	"files": [
 		"lib",
 		"!lib/__tests__"
 	],
 	"scripts": {
 		"types": "tsc",
-		"lint": "eslint . --max-warnings 0 && prettier '**/*.{js,mjs}' --check && npm run types",
+		"lint": "eslint . --max-warnings 0 && prettier '**/*.js' --check && npm run types",
 		"test": "jest",
 		"watch": "jest --watch",
 		"coverage": "jest --coverage",
-		"fix": "eslint . --fix --max-warnings=0 && prettier '**/*.{js,mjs}' --write"
+		"fix": "eslint . --fix --max-warnings=0 && prettier '**/*.js' --write"
 	},
 	"repository": "hudochenkov/postcss-styled-syntax",
 	"keywords": [
@@ -26,12 +27,13 @@
 	"author": "Aleks Hudochenkov <aleks@hudochenkov.com>",
 	"license": "MIT",
 	"lint-staged": {
-		"*.{js,mjs}": [
+		"*.js": [
 			"eslint --fix --max-warnings 0",
 			"prettier --write"
 		]
 	},
 	"jest": {
+		"runner": "jest-light-runner",
 		"prettierPath": null,
 		"watchPlugins": [
 			"jest-watch-typeahead/filename",
@@ -52,6 +54,7 @@
 		"eslint-config-prettier": "^10.1.8",
 		"globals": "^17.5.0",
 		"jest": "^30.3.0",
+		"jest-light-runner": "^0.7.11",
 		"jest-watch-typeahead": "^3.0.1",
 		"postcss": "^8.5.12",
 		"prettier": "^3.8.3",
