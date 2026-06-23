@@ -49,15 +49,15 @@
 	},
 	"devDependencies": {
 		"@types/jest": "^30.0.0",
-		"eslint": "^9.18.0",
+		"eslint": "^9.39.4",
 		"eslint-config-hudochenkov": "^13.0.0",
 		"eslint-config-prettier": "^10.1.8",
-		"globals": "^17.5.0",
-		"jest": "^30.3.0",
-		"jest-light-runner": "^0.7.11",
+		"globals": "^17.6.0",
+		"jest": "^30.4.2",
+		"jest-light-runner": "^0.7.12",
 		"jest-watch-typeahead": "^3.0.1",
-		"postcss": "^8.5.12",
-		"prettier": "^3.8.3",
+		"postcss": "^8.5.15",
+		"prettier": "^3.8.4",
 		"prettier-config-hudochenkov": "^0.4.0"
 	},
 	"engines": {
