@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## 0.7.3
+
+* Fixed stripping of a U+FEFF (byte-order mark) that opens a template
+
 ## 0.7.2
 
 * Updated dependencies
