@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## 0.7.4
+
+* Add missing default export after migrating the package to ESM
+
 ## 0.7.3
 
 * Fixed stripping of a U+FEFF (byte-order mark) that opens a template
