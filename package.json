@@ -10,7 +10,7 @@
 	],
 	"scripts": {
 		"types": "tsc",
-		"lint": "eslint . --max-warnings 0 && prettier '**/*.js' --check && npm run types",
+		"lint": "eslint . --max-warnings 0 && prettier '**/*.js' --check && pnpm run types",
 		"test": "jest",
 		"watch": "jest --watch",
 		"coverage": "jest --coverage",

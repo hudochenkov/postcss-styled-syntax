@@ -1,4 +1,5 @@
 node_modules/
 npm-debug.log
+pnpm-debug.log
 _dev/
 coverage/
